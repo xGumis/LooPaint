@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LooPaint</string>
+    <string name="color">Color</string>
+    <string name="size">Size</string>
+    <string name="erase">Erase</string>
+    <string name="clear">Clear</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.polarlooptheory.loopaint.MainActivity" android:orientation="vertical">
+
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:weightSum="5">
+        <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/savebutton"
+                android:elevation="4dp" android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:layout_weight="1" android:src="@drawable/save"/>
+        <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent" android:id="@+id/colorbutton"
+                android:textSize="14sp"
+                android:textStyle="bold" android:textAlignment="center"
+                android:layout_marginStart="4dp" android:layout_weight="1" android:elevation="4dp"
+        />
+        <Button
+                android:text="@string/size"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" android:id="@+id/sizebutton"
+                android:textSize="14sp"
+                android:textStyle="bold" android:textAlignment="center"
+                android:layout_marginStart="4dp" android:layout_weight="1" android:elevation="4dp"/>
+        <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/erasebutton"
+                android:elevation="4dp" android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:layout_weight="1" android:src="@drawable/eraser"/>
+        <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/clearbutton"
+                android:scaleType="fitCenter" android:adjustViewBounds="true"
+                android:layout_weight="1" android:src="@drawable/remove" android:elevation="4dp"/>
+    </LinearLayout>
+
+    <com.polarlooptheory.loopaint.DrawView android:layout_width="match_parent"
+                                           android:layout_height="match_parent"
+                                           android:id="@+id/drawView"
+                                           android:background="@android:color/white"/>
+</LinearLayout>
